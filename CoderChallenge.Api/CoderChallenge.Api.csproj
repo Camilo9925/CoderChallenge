@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.21">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoderChallenge.Domain\CoderChallenge.Domain.csproj" />
+    <ProjectReference Include="..\CoderChallenge.Arguments\CoderChallenge.Arguments.csproj" />
+    <ProjectReference Include="..\CoderChallenge.Infrastructure\CoderChallenge.Infrastructure.csproj" />
+    <ProjectReference Include="..\CoderChallenge.Application\CoderChallenge.Application.csproj" />
+  </ItemGroup>
+
+</Project>
